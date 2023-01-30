@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    border: 5px solid red;
+    height: 100vh; 
+}
+.cards-wrapper{
+    border: 2px solid rgb(157, 255, 0);
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.card{
+    border: 1px solid blue;
+    height: 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: content-box;
+    border-radius: 10px;
+    margin-right:10px ;
+    cursor: pointer;
+    transition: flex 0.9s ease-in;
+    flex: 0.5;
+}
+.card:nth-child(1){
+    margin-left: 10px;
+}
+
+.card.active{
+    flex:4;
+}
