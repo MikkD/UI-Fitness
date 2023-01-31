@@ -5,17 +5,14 @@
 }
 
 main{
-    border: 5px solid red;
     height: 100vh; 
 }
 .cards-wrapper{
-    border: 2px solid rgb(157, 255, 0);
     height: 100%;
     display: flex;
     align-items: center;
 }
 .card{
-    border: 1px solid blue;
     height: 80%;
     background-size: cover;
     background-repeat: no-repeat;
