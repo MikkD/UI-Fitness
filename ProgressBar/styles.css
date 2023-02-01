@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prorgess-bar-wrapper {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px
+        5px 15px;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.steppers {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stepper {
+    border: 2px solid rgb(212 212 212);
+    width: 25px;
+    height: 100%;
+    border-radius: 50%;
+    text-align: center;
+    transition: border 1.3s ease-out;
+}
+
+.stepper.active {
+    border: 2px solid rgb(42, 77, 253);
+}
+
+.line-bar {
+    flex: 1;
+    height: 5px;
+    background: linear-gradient(
+            to left,
+            rgb(212 212 212) 50%,
+            rgb(42, 77, 253) 50%
+        )
+        right;
+    background-size: 200% 100%;
+    transition: background 0.9s ease-out;
+}
+
+.line-bar.active {
+    background-position: left;
+}
+
+.buttons {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 25px;
+    border: transparent;
+    border-radius: 5px;
+    margin-right: 10px;
+    color: white;
+    transform: scale(1);
+    transition: transform 0.1s ease-in;
+    background-color: rgb(
+        108,
+        131,
+        246
+    );
+}
+.btn:hover {
+    cursor: pointer;
+    transform: scale(0.97);
+}
+
+.btn.active {
+    background-color: rgb(
+        108,
+        131,
+        246
+    );
+}
+.btn:disabled {
+    cursor: not-allowed;
+    transition: none;
+    transform: none;
+    background-color: rgb(212 212 212);
+}
+
+.stepper-item:not(:first-child) {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
