@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+input {
+    outline: none;
+}
+
+body {
+    height: 100vh;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-wrapper__input {
+    width: 0px;
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;
+}
+.search-wrapper__input.active {
+    width: 100%;
+    visibility: visible;
+}
+
+.search-wrapper__icon {
+    cursor: pointer;
+}
