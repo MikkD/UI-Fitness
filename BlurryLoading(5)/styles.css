@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.bg-img {
+    background-image: url("./assets/bg1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    filter: blur(100px);
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 36px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.loader.inactive {
+    opacity: 0;
+}
