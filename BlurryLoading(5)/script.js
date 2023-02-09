@@ -8,8 +8,6 @@ let blurValue = 100;
 
 function startLoader() {
     const isLoaderInProgress = counter < 100 && blurValue > 0;
-    console.log('counter', counter);
-    console.log('blurValue', blurValue);
 
     if (isLoaderInProgress) {
         counter++
